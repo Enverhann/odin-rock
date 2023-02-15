@@ -4,10 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="rock.js"></script>
-  
+    <div id="scores">
+        <span>:</span>
+    </div>
+    <div id="results">
+        <span></span>
+    </div>
+    <div id="playerwins">Game Over - Player wins the game</div>
+    <div id="computerwins">Game Over - Computer wins the game</div>
+    <div class="buttons">
+        <button id="rock" onclick="getPlayerChoice('Rock')">Rock</button>
+        <button id="paper" onclick="getPlayerChoice('Paper')">Paper</button>
+        <button id="scissor" onclick="getPlayerChoice('Scissor')">Scissor</button>
+    </div>
 </body>
+<script src="rock.js"></script>
 </html>
